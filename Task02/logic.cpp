@@ -33,9 +33,9 @@ double sum_of_elements(int* array, int size) {
 }
 
 double calculate_arithmetical_mean_of_nonzero_elements(int* array, int size) {
-	
 	if (sum_of_elements(array, size) == 0 || size <= 0) {
 		return 0;
 	}
+
 	return sum_of_elements(array, size) / count_elements(array, size);
 }
