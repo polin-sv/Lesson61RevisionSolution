@@ -18,3 +18,23 @@
 //	четверок 33.3 % (10)
 //	троек 23.3 % (7)
 //	двоек 3.4 % (1)
+
+#include "logic.h"
+
+int count_marks(int* array, int size, int mark) {
+	int count = 0;
+
+	for (int i = 0; i < size; i++)
+	{
+		if (*(array + i) == mark) {
+			count++;
+		}
+	}
+
+	return count;
+}
+
+double result_of_marks(int* array, int size,int mark) {
+	
+	return 100.0 * count_marks(array, size, mark) / size;
+}
