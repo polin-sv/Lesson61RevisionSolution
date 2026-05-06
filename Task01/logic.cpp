@@ -11,7 +11,7 @@
 
 void swap_if(int* x, int* y) {
 	int t;
-	if (*x >= *y) {
+	if (*x <= *y) {
 		t = *x;
 		*x = *y;
 		*y = t;
@@ -19,8 +19,19 @@ void swap_if(int* x, int* y) {
 }
 
 void get_in_desc_order(int* a, int* b, int* c) {
-	
-	if (*a < *b) {
-		swap_if
+
+	if (*c >= *a) {
+		swap_if(a, c);
 	}
+
+	if (*c >= *b) {
+		swap_if(b, c);
+	}
+
+	if (*b >= *a) {
+		swap_if(a, b);
+	}
+
+	
+
 }

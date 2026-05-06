@@ -76,7 +76,7 @@ void test09() {
 void test10() {
 	int array[]{ 5, 1 };
 	int size = 2;
-	int expected = 1;
+	int expected = 2;
 	print_test(array, size, expected, "test10");
 }
 
@@ -84,7 +84,7 @@ void test10() {
 void test11() {
 	int array[]{ 5, -5, 5, -5 };
 	int size = 4;
-	int expected = 2;
+	int expected = 4;
 	print_test(array, size, expected, "test11");
 }
 
@@ -92,6 +92,6 @@ void test11() {
 void test12() {
 	int array[]{ -1, -5, -8, -2 };
 	int size = 4;
-	int expected = 2;
+	int expected = 3;
 	print_test(array, size, expected, "test12");
 }
